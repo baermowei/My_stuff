@@ -1,0 +1,161 @@
+// -----------盒模型类的--------------------------
+//定义去边框
+.no_border{
+	box-sizing: border-box;//只兼容到IE8;
+}
+//定义去边框的盒子
+.WH(@W,@H){
+	.no_border;
+	width: @W;
+	height: @H;
+}
+//定义去边框并且左右居中的盒
+.WH_v(@W,@H){
+	.WH(@W,@H);
+	margin: 0 auto;
+}
+//定义上下居中的盒（使用浮动的）
+.WH_h(fl,@W,@H,@f_H){
+	float: left;
+	.WH(@W,@H);
+	margin: (@f_H - @H )/2 0;
+}
+////定义上下居中的盒（使用定位的）
+
+.WH_h(po,@W,@H,@f_H){
+	position: relative;
+	.WH(@W,@H);
+	top: (@f_H - @H )/2;
+}
+
+//定义全居中的盒子（浮动）!!!有个小bug，如果宽度用px对应的也必须用Px,如果用的%，对应的也用%；
+.WH_c(fl,@W,@H,@f_W,@f_H){
+	float: left;
+	.WH(@W,@H);
+	margin-left: (@f_W - @W )/2;
+	margin-top: (@f_H - @H )/2;
+	//margin:(@f_W - @W )/2 (@f_H - @H )/2;这句不起作用
+}
+//用定位居中的写法
+.WH_c(po,@W,@H,@f_W,@f_H){
+	position: relative;
+	.WH(@W,@H);
+	left: (@f_W - @W )/2;
+	top:(@f_H - @H )/2;
+}
+
+
+//使用vertical-align制作的居中写法
+
+//这个是用i标签制作参考的
+.v100{
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+// 让主题元素编程内联块。。如果里面包含的块级就可以自动上下对齐了
+.VA{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+
+//height与line-height的写法
+
+.h_line(@h){
+	height: @h;
+	line-height: @h;
+}
+/////-----------------浮动的写法-------------------///////////
+//浮动的写法
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+/////////////////////////////////////////////////////////////////////
+//定位的写法---------relative只封装了一个，绝对定位封装了4个
+.PR(@L:0;@T:0){
+	position: relative;
+	left: @L;
+	top: @T;
+}
+//绝对定位
+.PA(lt,@L:0,@T:0){
+	position: absolute;
+	left: @L;
+	top: @T;
+}
+.PA(lb,@L:0,@B:0){
+	position: absolute;
+	left: @L;
+	bottom: @B;
+}
+.PA(rt,@R:0,@t:0){
+	position: absolute;
+	right: @R;
+	top: @t;
+}
+.PA(rb,@R:0,@B:0){
+	position: absolute;
+	right: @R;
+	bottom: @B;
+}
+//常用样式的写法
+
+// 透明度的封装//很奇怪用小数写就会报错，然后用整数却问题，简直醉
+.alpha(@A:50){
+	opacity: @A/100;
+filter: alpha(opacity=@A);
+}
+
+
+//三角样式的混合写法，兼容到IE6的写法
+
+//这个@_作通用模式的
+.triangle(@_,@w:5px,@color:#666){
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+.triangle(top,@w:5px,@color:#666){
+	border-width: @w;
+	border-color: transparent transparent @color transparent;
+	border-style: dashed dashed solid dashed;
+}
+.triangle(right,@w:5px,@color:#666){
+	border-width: @w;
+	border-color: transparent transparent transparent @color ;
+	border-style: dashed dashed dashed solid ;
+}
+.triangle(bottom,@w:5px,@color:#666){
+	border-width: @w;
+	border-color: @color transparent transparent transparent;
+	border-style: solid dashed dashed dashed;
+}
+.triangle(left,@w:5px,@color:#666){
+	border-width: @w;
+	border-color: transparent @color transparent transparent;
+	border-style: dashed solid dashed dashed;
+}
+///————————————————-----对超链接和按钮的封装
+
+.a_reset(@a_color:#666){
+	text-decoration: none;
+	color: @a_color;
+};
+.a_botton(@a_color:#fff,@a_bg:#000,@a_c_hover:#000,@a_bg_hover:#fff){
+
+	.a_reset(@a_color);
+	display: block;
+	text-align: center;
+	background: @a_bg;
+	&:hover{
+		color: @a_c_hover;
+		background: @a_bg_hover;
+	}
+}
