@@ -1,0 +1,42 @@
+
+.ThumbaGallery {position:relative;}
+.thumba {list-style:none;padding:0;margin:0;width:700px;display:table;position:relative}
+.thumba dl {margin: 10px;display:inline-table;vertical-align:middle;z-index:9;}
+.thumba_text P{ line-height:30PX; font-size:12px;}
+.thumba_text P span{ float:right;}
+.thumba_text P span a:link{ color:#f98e04;}
+.thumba_text a:link{ line-height:30PX; color:#711404; text-decoration:none;}
+
+.thumba dl dd a {display:block}
+.wrapThumba {position:absolute;top:0;left:0;z-index:10;border-width:2px;border-color:#711404;border-style: solid;background-color:transparent;display:none;cursor:pointer;}
+	
+	/** Overlay lightbox **/
+.ThumbaLightbox_overlay {
+		z-index:9998;
+		background-color:#000;
+		opacity:0.5;
+		-ms-filter: "alpha(opacity=50)"; /* IE 8 */ 
+		filter: alpha(opacity=50);
+		position:fixed;
+		top:0; 
+		left:0; 
+		width:100%; 
+		height:100%; 
+		display:none;
+	}
+	
+	/** Main container lightbox **/
+	.ThumbaLightbox {
+		position:absolute;
+		z-index:9999;
+		overflow:hidden;
+		border:1px solid #000;
+	}
+	
+	/** Legend Img **/
+	.ThumbaLightboxLegend {
+		background-color:#000;
+		color:#fff;
+		font-size:12px;
+		font-style:italic;
+	}

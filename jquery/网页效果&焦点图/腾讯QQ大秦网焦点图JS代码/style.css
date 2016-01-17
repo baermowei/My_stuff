@@ -1,0 +1,21 @@
+
+* { padding: 0; margin: 0; }
+img { border: none; }
+li { list-style: none; }
+
+body { background: #f1f1f1; }
+
+#slide_play { width: 642px; height: 326px; position: relative; margin: 50px auto 0; }
+#slide_play ul { width: 642px; height: 272px; position: relative; }
+#slide_play ul li { position: absolute; }
+#slide_play ul li img { display: block; }
+#slide_play span { position: absolute; bottom: 0; left: 0; overflow: hidden; }
+#slide_play .text a { line-height: 32px; color: #fff; font-size: 12px; z-index: 2; padding-left: 10px; text-decoration:none; }
+#slide_play .text a:hover { text-decoration:underline; font-weight:bold; }
+#slide_play .bg { background: #000; filter: alpha(opacity: 50); opacity: 0.5; z-index: 1; }
+#slide_play .shade { position: absolute; bottom: -21px; left: 0; height: 20px; background: url(images/shade.gif) repeat-x; }
+
+#slide_play ol { position: absolute; bottom: 20px; left: 217px; z-index: 1; }
+#slide_play ol li { width: 37px; height: 6px; overflow: hidden; float: left; margin-right: 6px; background: url(images/btn.gif) no-repeat 0 -6px; cursor: pointer; }
+#slide_play .active { background: url(images/btn.gif) no-repeat 0 0; }
+/*一流素材网收藏整理：www.16sucai.com 代码来源妙味课堂www.miaov.com*/

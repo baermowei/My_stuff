@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>卓越网产品图片左右自动滚动的jquery特效代码_www.update8.com</title>
+<link href="css/amazon_scroller.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/amazon_scroller.js"></script>
+</head>
+    <body>
+        <script language="javascript" type="text/javascript">
+
+            $(function() {
+                $("#amazon_scroller1").amazon_scroller({
+                    scroller_title_show: 'enable',
+                    scroller_time_interval: '4000',
+                    scroller_window_background_color: "#CCC",
+                    scroller_window_padding: '10',
+                    scroller_border_size: '1',
+                    scroller_border_color: '#000',
+                    scroller_images_width: '150',
+                    scroller_images_height: '100',
+                    scroller_title_size: '12',
+                    scroller_title_color: 'black',
+                    scroller_show_count: '2',
+                    directory: 'images'
+                });
+				$("#amazon_scroller2").amazon_scroller({
+                    scroller_title_show: 'disable',
+                    scroller_time_interval: '3000',
+                    scroller_window_background_color: "none",
+                    scroller_window_padding: '10',
+                    scroller_border_size: '0',
+                    scroller_border_color: '#CCC',
+                    scroller_images_width: '100',
+                    scroller_images_height: '80',
+                    scroller_title_size: '12',
+                    scroller_title_color: 'black',
+                    scroller_show_count: '2',
+                    directory: 'images'
+                });
+				$("#amazon_scroller3").amazon_scroller({
+                    scroller_title_show: 'enable',
+                    scroller_time_interval: '3000',
+                    scroller_window_background_color: "none",
+                    scroller_window_padding: '10',
+                    scroller_border_size: '2',
+                    scroller_border_color: '#9C6',
+                    scroller_images_width: '80',
+                    scroller_images_height: '60',
+                    scroller_title_size: '11',
+                    scroller_title_color: 'black',
+                    scroller_show_count: '3',
+                    directory: 'images'
+                });
+            });
+        </script>
+	<h1>Amazon style image and title scroller</h1>
+        <h2>Demo</h2>
+        <div id="amazon_scroller1" class="amazon_scroller">
+            <div class="amazon_scroller_mask">
+                <ul>
+                    <li><a href="link1" title="title1"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title2"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title3"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title4"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link1" title="title5"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title6"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title7"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title8"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                </ul>
+            </div>
+            <ul class="amazon_scroller_nav">
+                <li></li>
+                <li></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <hr/>
+        <div id="amazon_scroller2" class="amazon_scroller">
+            <div class="amazon_scroller_mask">
+                <ul>
+                    <li><a href="link1" title="title1"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title2"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title3"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title4"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link1" title="title5"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title6"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title7"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title8"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                </ul>
+            </div>
+            <ul class="amazon_scroller_nav">
+                <li></li>
+                <li></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <hr/>
+        <div id="amazon_scroller3" class="amazon_scroller">
+            <div class="amazon_scroller_mask">
+                <ul>
+                    <li><a href="link1" title="title1"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title2"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title3"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title4"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link1" title="title5"><img src="images/scroller_large_1.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link2" title="title6"><img src="images/scroller_large_2.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link3" title="title7"><img src="images/scroller_large_3.jpg" width="60" height="60" alt="title"/></a></li>
+                    <li><a href="link4" title="title8"><img src="images/scroller_large_4.jpg" width="60" height="60" alt="title"/></a></li>
+                </ul>
+            </div>
+            <ul class="amazon_scroller_nav">
+                <li></li>
+                <li></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <h2>Usage</h2>
+    <h3>Add js and css files.</h3>
+        <code>
+       	&lt;link href=&quot;css/amazon_scroller.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;/link&gt;<br />
+       	&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.3.2.min.js&quot;&gt;&lt;/script&gt;<br />
+       	&lt;script type=&quot;text/javascript&quot; src=&quot;js/amazon_scroller.js&quot;&gt;&lt;/script&gt; </code>
+    <h3>Add html tags.</h3>
+    	<pre>
+        &lt;div id=&quot;amazon_scroller&quot; class=&quot;amazon_scroller&quot;&gt;<br />            &lt;div class=&quot;amazon_scroller_mask&quot;&gt;<br />                &lt;ul&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link1&quot; title=&quot;title1&quot;&gt;&lt;img src=&quot;images/scroller_large_1.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link2&quot; title=&quot;title2&quot;&gt;&lt;img src=&quot;images/scroller_large_2.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link3&quot; title=&quot;title3&quot;&gt;&lt;img src=&quot;images/scroller_large_3.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link4&quot; title=&quot;title4&quot;&gt;&lt;img src=&quot;images/scroller_large_4.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link1&quot; title=&quot;title5&quot;&gt;&lt;img src=&quot;images/scroller_large_1.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link2&quot; title=&quot;title6&quot;&gt;&lt;img src=&quot;images/scroller_large_2.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link3&quot; title=&quot;title7&quot;&gt;&lt;img src=&quot;images/scroller_large_3.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                    &lt;li&gt;&lt;a href=&quot;link4&quot; title=&quot;title8&quot;&gt;&lt;img src=&quot;images/scroller_large_4.jpg&quot; width=&quot;60&quot; height=&quot;60&quot; alt=&quot;title&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                &lt;/ul&gt;<br />            &lt;/div&gt;<br />            &lt;ul class=&quot;amazon_scroller_nav&quot;&gt;<br />                &lt;li&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;/li&gt;<br />            &lt;/ul&gt;<br />            &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;<br />        &lt;/div&gt;
+		</pre>
+    <h3>Add start script</h3>
+        <pre>
+                $(&quot;#amazon_scroller3&quot;).amazon_scroller({<br />                    scroller_title_show: 'enable',<span role="presentation">//enable  disable  </span><br />                    scroller_time_interval: '3000',<br />                    scroller_window_background_color: &quot;#FFF&quot;,<br />                    scroller_window_padding: '10',<br />                    scroller_border_size: '2',<br />                    scroller_border_color: '#CCC',<br />                    scroller_images_width: '80',<br />                    scroller_images_height: '60',<br />                    scroller_title_size: '11',<br />                    scroller_title_color: '#000',<br />                    scroller_show_count: '3',<br />                    directory: 'images'<br />                });
+        </pre>
+        <p>More script and css style: <a href="http://www.update8.com/effects" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">htmldrive.net </a></p>
+
+<div style="width:98%;margin:20px auto; padding:50px 0; clear:both; overflow:hidden;">
+<p><strong><a href="http://www.update8.com/effects" target="_blank">技术教程网整理</a></strong> </p>
+<p></p>
+<p>转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+</div>
+
+
+    </body>
+</html>

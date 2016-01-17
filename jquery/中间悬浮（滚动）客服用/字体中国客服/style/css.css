@@ -1,0 +1,73 @@
+@charset "gb2312";
+/* CSS Document */
+
+body{ 
+margin:0; 
+padding:0;
+font-size:12px;
+color:#494949;
+line-height:180%;
+font-family:"ËÎÌå";
+background:url(../images/sybg.jpg) repeat-x;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption { margin: 0; padding: 0;list-style-type:none; }
+table, th,td { margin:0; }
+img{ border:0}
+
+
+a { color:#494949; text-decoration:none; cursor: hand;}
+a:hover { color:#c00; text-decoration:none;}
+
+
+.left{ float:left}
+.right{ float:right}
+
+
+
+
+#Float{  position:absolute;}
+.boxgrid{width: 45px; height: auto; position:absolute; right:0; top:0; overflow:hidden; z-index:999;}
+.boxgrid .cover{ border: 0; width:45px; height:497px; background:url(../images/qim.png) no-repeat;}
+.boxgrid .btn{ float:left; width:46px; height:126px; }
+.boxgrid .cover .cue{width:215px; padding-left:70px; padding-top:75px}
+.boxgrid .cover .cue h2{ font-family:"Î¢ÈíÑÅºÚ"; font-size:18px;color:#AF8F5E; font-weight:100; height:30px; line-height:30px}
+.boxgrid .cover .cue ul{width:215px; height:auto; overflow:hidden}
+.boxgrid .cover .cue ul li.zc_xx{width:60px; }
+.boxgrid .cover .cue ul li.zc_xx1 input{ border:0; background:none; width:130px;}
+.boxgrid .cover .cue ul li.zc_xx1{width:144px;background:url(../images/c_qqd.jpg) no-repeat; padding-left:5px}
+.boxgrid .cover .cue ul li.zc_xx2{width:144px;background: url(../images/x_txt.jpg); padding-left:5px; height:54px; color:#C7C7C7; line-height:180%;}
+.boxgrid .cover .cue ul li.zc_xx3{width:80px; height:23px; border:#C6C6C6 solid 1px; line-height:23px }
+.boxgrid .cover .cue ul li.zc_xx4{width:65px;}
+.boxgrid .cover .cue ul li.zc_xx5{width:100px; height:26px; padding-left:57px; padding-right:58px; margin-top:5px}
+.boxgrid .cover .cue ul li.zc_xx3 input{width:78px; border:0; background:none}
+
+.boxgrid .cover .cue ul li{ float:left;height:24px; line-height:24px; margin-bottom:5px; font-family:"Î¢ÈíÑÅºÚ"; font-size:12px; color:#4C4C4C}
+
+#kfpopupDiv
+{
+    position:absolute;
+    width:404px;
+    height:173px;
+    line-height:400%;
+    font-size:13px;
+    left:500px;
+    top:300px;
+	cursor:move;
+	z-index:1000;
+}
+
+
+a.clo{ width:42px; height:19px; display:block; float:right; background: url(../images/close.gif) no-repeat; margin-top:9px; margin-right:2px;}
+a.clo:hover{ width:42px; height:19px; display:block; float:right; background: url(../images/close.gif) no-repeat 0 -19px; margin-top:9px; margin-right:2px;}
+
+
+a.clo_list{ width:42px; height:19px; display:block;  background: url(../images/close.gif) no-repeat;top:0; left:60px;position: absolute}
+a.clo_list:hover{ width:42px; height:19px; display:block;  background: url(../images/close.gif) no-repeat 0 -19px; margin-top:9px;top:0; left:60px; margin-right:2px;position: absolute}
+

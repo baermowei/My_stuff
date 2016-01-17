@@ -1,0 +1,67 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: #ffffff; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: "ËÎÌå", "ÐÂËÎÌå", Arial, Helvetica, sans-serif
+}
+A {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #000000
+}
+A:visited {
+	COLOR: #333333
+}
+A:hover {
+	COLOR: #f5811d
+}
+A:active {
+	COLOR: #000000
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+
+
+
+#myjQuery {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #b7a490; PADDING-BOTTOM: 5px; OVERFLOW: hidden; WIDTH: 488px; PADDING-TOP: 5px; POSITION: relative; HEIGHT: 275px
+}
+#myjQueryContent {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; OVERFLOW: hidden; BORDER-LEFT: #ffffff 1px solid; WIDTH: 486px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 224px
+}
+#myjQueryContent DIV {
+	POSITION: absolute; HEIGHT: 224px;left:6px;top:6px;
+}
+#myjQueryContent .smask {
+	Z-INDEX: -1
+}
+#myjQueryContent IMG {
+	WIDTH: 486px; HEIGHT: 224px
+}
+#myjQueryNav {
+	BORDER-TOP: #ffffff 2px solid; DISPLAY: block; OVERFLOW: hidden; WIDTH: 488px; HEIGHT: 47px
+}
+#myjQueryNav LI {
+	DISPLAY: block; FLOAT: left; WIDTH: 122px; CURSOR: pointer; PADDING-TOP: 7px; HEIGHT: 40px; TEXT-ALIGN: center
+}
+#myjQueryNav .nbg {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#myjQueryNav A {
+	DISPLAY: block; Z-INDEX: 12; MARGIN: 0px auto; TEXT-TRANSFORM: uppercase; WIDTH: 85px; COLOR: #ffffff; LINE-HEIGHT: 16px; POSITION: relative; HEIGHT: 47px
+}
+#myjQueryNav .current {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#myjQueryNav .current A {
+	COLOR: #f6821e
+}
+#myjQuery #flow {
+	MARGIN-TOP: -47px; Z-INDEX: 10; BACKGROUND: url(../images/fcurrent.gif); LEFT: 5px; WIDTH: 122px; POSITION: absolute; HEIGHT: 47px
+}

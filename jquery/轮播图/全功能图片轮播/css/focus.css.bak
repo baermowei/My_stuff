@@ -1,0 +1,191 @@
+UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+A:hover IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#banner_images {
+	POSITION: relative; MARGIN: 10px auto; WIDTH: 960px; BACKGROUND: #2d2d2d
+}
+#banner_images .focus {
+	PADDING-BOTTOM: 10px; MARGIN: 0px auto; WIDTH: 848px; OVERFLOW: hidden
+}
+#banner_images .focus .wrapper {
+	Z-INDEX: 9; POSITION: relative; WIDTH: 5000px; HEIGHT: 251px
+}
+#banner_images .focus .page {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 8px; FLOAT: left; OVERFLOW: hidden; PADDING-TOP: 12px
+}
+#banner_images .focus .page LI {
+	MARGIN-LEFT: 8px
+}
+#banner_images .focus IMG {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus A {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .nth-1 {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .nth-2 {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .nth-3 {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .nth-4 {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .nth-5 {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 230px
+}
+#banner_images .focus .poster3 .nth-1 {
+	WIDTH: 496px
+}
+#banner_images .focus .poster3 .nth-1 IMG {
+	WIDTH: 496px
+}
+#banner_images .focus .poster3 .nth-1 SPAN.cover {
+	WIDTH: 494px
+}
+#banner_images .focus .poster3 .nth-1 A:hover SPAN.cover {
+	WIDTH: 492px
+}
+#banner_images .focus .poster1 .nth-1 {
+	WIDTH: 832px
+}
+#banner_images .focus .poster1 .nth-1 IMG {
+	WIDTH: 832px
+}
+#banner_images .focus .poster1 .nth-1 SPAN.cover {
+	WIDTH: 830px
+}
+#banner_images .focus .poster1 .nth-1 A:hover SPAN.cover {
+	WIDTH: 828px
+}
+#banner_images .focus A {
+	POSITION: relative
+}
+#banner_images .focus A SPAN.cover {
+	BORDER-BOTTOM: #3e3e3e 1px solid; POSITION: absolute; BORDER-LEFT: #3e3e3e 1px solid; WIDTH: 158px; DISPLAY: block; HEIGHT: 228px; BORDER-TOP: #3e3e3e 1px solid; TOP: 0px; BORDER-RIGHT: #3e3e3e 1px solid; LEFT: 0px
+}
+#banner_images .focus A:hover SPAN.cover {
+	BORDER-BOTTOM: #797979 2px solid; BORDER-LEFT: #797979 2px solid; WIDTH: 156px; HEIGHT: 226px; BORDER-TOP: #797979 2px solid; BORDER-RIGHT: #797979 2px solid
+}
+#banner_images B SPAN.left {
+	POSITION: absolute; WIDTH: 32px; DISPLAY: block; BACKGROUND: url(../images/movie-home-spr-8.png) 0px 0px; HEIGHT: 64px; TOP: 96px; CURSOR: pointer; LEFT: 18px
+}
+#banner_images B.hover SPAN.left {
+	BACKGROUND-POSITION: 0px -65px
+}
+#banner_images B:hover SPAN.left {
+	BACKGROUND-POSITION: 0px -65px
+}
+#banner_images B SPAN.right {
+	POSITION: absolute; WIDTH: 32px; DISPLAY: block; BACKGROUND: url(../images/movie-home-spr-8.png) -39px 0px; HEIGHT: 64px; TOP: 96px; CURSOR: pointer; RIGHT: 18px
+}
+#banner_images B.hover SPAN.right {
+	BACKGROUND-POSITION: -39px -65px
+}
+#banner_images B:hover SPAN.right {
+	BACKGROUND-POSITION: -39px -65px
+}
+#banner_images .switcher {
+	TEXT-ALIGN: center; LINE-HEIGHT: 10px; HEIGHT: 10px
+}
+#banner_images .switcher .button {
+	LINE-HEIGHT: 10px; BACKGROUND-COLOR: #9aa594; MARGIN: 0px 3px; WIDTH: 45px; DISPLAY: inline-block; HEIGHT: 10px; FONT-SIZE: 0px; CURSOR: pointer
+}
+#banner_images .switcher .cur .button {
+	BACKGROUND: url(../images/movie-home-spr-8.png) -80px -32px
+}
+#banner_images .filter {
+	BACKGROUND: url(../images/movie-home-v-spr-8.png) 0px 0px; HEIGHT: 96px
+}
+#banner_images .sort_link {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 13px; WIDTH: 84px; PADDING-RIGHT: 19px; FLOAT: left; HEIGHT: 72px; PADDING-TOP: 24px
+}
+#banner_images .sort_link A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; DISPLAY: block; MARGIN-BOTTOM: 6px; BACKGROUND: url(../images/movie-home-v-spr-8.png) 0px -100px; HEIGHT: 26px; COLOR: #333; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+#banner_images .v_spl {
+	WIDTH: 1px; BACKGROUND: url(../images/movie-home-spr-8.png) 0px -144px; FLOAT: left; HEIGHT: 96px; FONT-SIZE: 0px; OVERFLOW: hidden
+}
+#banner_images .filter .container {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 14px; PADDING-RIGHT: 10px; FLOAT: left; PADDING-TOP: 10px
+}
+#banner_images .filter_plot {
+	WIDTH: 288px
+}
+#banner_images .filter_year {
+	WIDTH: 240px
+}
+#banner_images .filter_district {
+	WIDTH: 240px
+}
+#banner_images .filter .container H2 {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 5px; WIDTH: 39px; PADDING-RIGHT: 0px; FONT: 12px/18px "SIMSUN", Arial, monospace; BACKGROUND: url(../images/movie-home-spr-8.png) -80px -2px; HEIGHT: 18px; COLOR: #ddd; PADDING-TOP: 3px
+}
+#banner_images .filter {
+	FONT-SIZE: 12px
+}
+#banner_images .filter .items {
+	LINE-HEIGHT: 25px; MARGIN-LEFT: -3px; MARGIN-RIGHT: -3px; PADDING-TOP: 3px
+}
+#banner_images .filter .items .item {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 12px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; DISPLAY: inline-block; FONT-FAMILY: tahoma, "simsun"; LETTER-SPACING: 1px; COLOR: #999; MARGIN-RIGHT: 2px; PADDING-TOP: 5px; -moz-font-family: "simsun"; _margin: 2px 0
+}
+#banner_images .filter .items .item:hover {
+	BACKGROUND: #15a50d; LETTER-SPACING: 0px; COLOR: #fff; FONT-WEIGHT: bolder; TEXT-DECORATION: none
+}
+#banner_images .filter .items A.hilight {
+	COLOR: #eee
+}
+#banner_images .focus .page LI {
+    display: inline
+}
+#banner_images {
+	overflow: hidden
+}
+#banner_images .focus .wrapper {
+    overflow: hidden
+}
+#banner_images B SPAN {
+	z-index: 99; overflow: hidden
+}
+#banner_images B SPAN.left {}
+#banner_images B SPAN a {
+	text-indent: -9999px
+}
+#banner_images B SPAN.left a {
+    display: block;
+    height: 64px;
+    left: 18px;
+    top: 96px;
+    width: 32px;
+	background: url("../images/movie-home-spr-8.png") repeat scroll 0 0 transparent
+}
+#banner_images B SPAN.left a:hover {
+	background-position: 0 -65px
+}
+#banner_images B SPAN.right a { 
+    display: block;
+    height: 64px;
+    left: 18px;
+    top: 96px;
+    width: 32px;
+	background: url("../images/movie-home-spr-8.png") repeat scroll -39px 0 transparent
+}
+#banner_images B SPAN.right a:hover {
+	background-position: -39px -65px
+}
+#banner_images .focus {
+	position: relative
+}

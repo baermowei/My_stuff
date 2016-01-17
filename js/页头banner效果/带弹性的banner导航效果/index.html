@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jquery类似flash效果动感滑动背景导航菜单_零度对策www.duice.net</title>
+<meta name="keywords" content="HTML+CSS模板,HTML+CSS教程,HTML+CSS导航菜单,FLASH焦点图,网页特效" />
+<meta name="description" content="懒人建站为您提供-HTML+CSS模板，HTML+CSS教程，JS广告代码，HTML+CSS导航菜单，FLASH焦点图片，国外网页设计欣赏与模板和CSS技巧。" />
+<style type=text/css media=screen>
+HTML {padding:0px;margin:0px;}
+HTML,BODY,UL{padding:0px;margin:0px;}
+A {	COLOR: #fff; TEXT-DECORATION: none}
+A:hover {COLOR: #fff; TEXT-DECORATION: none}
+A IMG {BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0px}
+UL {LIST-STYLE: none none outside;}
+.lavaLamp {	POSITION: relative; FLOAT: left; margin-left:12px;}
+.lavaLamp LI {	TEXT-ALIGN: center; LINE-HEIGHT: 43px; LIST-STYLE-TYPE: none; WIDTH: 103px; FLOAT: left}
+.lavaLamp LI.back {	Z-INDEX: 1; POSITION: absolute; WIDTH: 103px; BACKGROUND: url(images/hover.jpg) no-repeat center center; HEIGHT: 43px; line-height:43px;}
+.lavaLamp LI A {	Z-INDEX: 2; POSITION: relative; FONT-VARIANT: small-caps; WIDTH: 103px; DISPLAY: block; HEIGHT: 43px; line-height:43px; FONT-SIZE:10.5pt; TEXT-DECORATION: none}
+.lavaLamp LI A:hover {	COLOR: #0787D0;	font-weight: bold;}
+.lavaLamp LI.current-cat A {COLOR:#006600;font-weight: bold;background-image:none;}
+#wrapper{ BACKGROUND: url(images/nav_bj.jpg) no-repeat left center;width:960px;height:43px;display:block;margin:0 auto;}
+</style>
+<SCRIPT type=text/javascript src="images/jquery.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="images/xixi.js"></SCRIPT>
+<SCRIPT type=text/javascript>
+$(function(){$(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});
+</SCRIPT>
+</head>
+<body style="text-align:center"><br><br>
+<DIV id=wrapper>
+<UL class=lavaLamp>
+    <li class="onelink"><a href='http://www.duice.net/html/list_622.html'>主页</a></li>
+    <li><a href='http://www.duice.net/html/list_622.html' >网络营销</a></li>
+    <li><a href='http://www.duice.net/html/list_622.html'  rel='dropmenu1'>JS代码</a></li>
+    <li><a href='http://www.duice.net/html/list_622.html'  rel='dropmenu8'>零度对策</a></li>
+    <li><a href='http://www.duice.net/html/list_622.html' >SEO优化</a></li>
+    <li><a href='http://www.duice.net/html/list_622.html'  rel='dropmenu9'>建站技巧</a></li>
+</UL>
+</DIV>
+</body>
+</html>
+

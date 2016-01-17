@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<link href="style/css.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('.flash_bar,#tit_fc1,#tit_fc2,#tit_fc3,#tit_fc4,#flashLine,.muen_box,.menu,#wrap-nav,.count,.children,.clearfix,.depth1,a,.cover');
+</script>
+<![endif]-->
+</head>
+
+<body>
+
+<script src="js/jquery-1.4.2.min.js" ></script>
+<SCRIPT type=text/javascript>
+	$(document).ready(function(){
+		
+		//Horizontal Sliding
+		$('.boxgrid.slideright').mouseover(function(){
+			$(".cover", this).stop().animate({width:'326px'},{queue:false,duration:300});
+			$('.boxgrid.slideright').animate({width:'326px'},{queue:false,duration:300});
+		});
+		$('.boxgrid.slideright').mouseout(function(){
+			$(".cover", this).stop().animate({width:'45px'},{queue:false,duration:300});
+			$('.boxgrid.slideright').animate({width:'45px'},{queue:false,duration:300});
+		});
+		$(window).scroll(function (){
+		var offsetTop = $(window).scrollTop() + 80 +"px";
+		$("#Float").animate({top : offsetTop },{ duration:500 , queue:false });
+		
+	}); 
+	});
+</SCRIPT>
+
+
+
+
+<DIV class="boxgrid slideright" id="Float"  style="display:block;">
+  <div class="cover">
+    <div class="cue">
+      <h2>我们的联系方式：</h2>
+      <ul>
+        <li class="zc_xx">咨询QQ：</li>
+        <li class="zc_xx1">4006488850 <a href="javascript:if(confirm('http://wpa.qq.com/msgrd?V=1&Uin=4006488850&Site=在线咨询&Menu=no  \n\n文件并未依 Teleport Pro 取回，因为 它的域或路径超过开始网址中设置的范围。  \n\n你要从服务器上打开它吗？'))window.location='http://wpa.qq.com/msgrd?V=1&Uin=4006488850&Site=在线咨询&Menu=no' style="color: #C40000">在线沟通</a></li>
+        <li class="zc_xx">MSN：</li>
+        <li class="zc_xx1">hubojuan@163.com</li>
+        <li class="zc_xx">咨询电话：</li>
+        <li class="zc_xx1">4006-4888-50</li>
+        <li class="zc_xx">电子邮箱：</li>
+        <li class="zc_xx1">4006488850@b.qq.com</li>
+        <li class="zc_xx">官方网址：</li>
+        <li class="zc_xx1">www.zitichian.com </li>
+      </ul>
+      <h2>给我们留言：</h2>
+      <form method="post" action="http://www.zitichina.com/plus/guestbook.php" name="form1">
+        <input type='hidden' name='action' value='save' />
+        <ul>
+          <li class="zc_xx">您贵姓：</li>
+          <li class="zc_xx1">
+            <input type="text" name="uname" />
+          </li>
+          <li class="zc_xx"><font color="#FF0000">您手机*：</font></li>
+          <li class="zc_xx1">
+            <input type="text" name="phone" />
+          </li>
+          <li class="zc_xx">设计内容：</li>
+          <li class="zc_xx2">
+            <textarea name="msg" cols="16" rows="3" style="border:0; background:none; overflow:hidden"></textarea>
+          </li>
+          <li class="zc_xx">验证码：</li>
+          <li class="zc_xx4"><img src="images/vdimgck.php.jpg" /></li>
+          <li class="zc_xx3">
+            <input name="validate" type="text" id="vdcode2" value="输入验证码" onFocus="if (value =='输入验证码'){value =''}" onBlur="if (value ==''){value='输入验证码'}"/>
+          </li>
+          <li class="zc_xx5">
+            <input name="" type="image" src="images/c_dtj.jpg" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</DIV>
+
+
+
+</body>
+</html>

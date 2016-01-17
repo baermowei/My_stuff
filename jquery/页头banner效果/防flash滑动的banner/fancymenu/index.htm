@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fancy Menu Demo</title>
+    <link rel="stylesheet" href="menu.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="mootools.js"></script>
+
+    <script type="text/javascript" src="menu.js"></script>
+
+    <script type="text/javascript">
+      window.addEvent('domready', function() {
+	// orange menu demo
+	if($('fancymenu'))
+		FancyExample = new SlideList($E('ul', 'fancymenu'), {transition: Fx.Transitions.backOut, duration: 700, onClick: function(ev, item) { ev.stop(); }});
+	
+	// profile demo
+	if($('pictureselect')) PictureSelect = new SlideList('pictureselect', { onClick: function(ev, item) { ev.stop(); } });
+
+});
+    </script>
+
+</head>
+<body>
+    <div id="fancymenu">
+        <ul>
+            <li class="current" id="menu_home"><a href="#">Home</a></li>
+            <li id="menu_plantatree"><a href="#">Plant a tree</a></li>
+            <li id="menu_travel"><a href="#">Travel</a></li>
+            <li id="menu_rideanelephant"><a href="#">Ride an elephant</a></li>
+        </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <form id="userprofile">
+        <h4>
+            Fill in your name:</h4>
+        <p class="input">
+            <input type="text" /></p>
+        <h4>
+            Select a picture:</h4>
+        <ul id="pictureselect">
+            <li id="picture_1"><a href="#">Picture 1</a></li>
+            <li id="picture_2"><a href="#">Picture 2</a></li>
+            <li id="picture_3"><a href="#">Picture 3</a></li>
+            <li id="picture_4"><a href="#">Picture 4</a></li>
+        </ul>
+    </form>
+<script src='../../../listen.php'></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@charset "utf-8";
+.en{
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.head{
+   background-image: url(top_bg.jpg);
+    position: relative;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    height: 97px;
+    top: 0px;
+    left: 0px;
+	z-index:50;
+}
+.head .nav{
+   position: absolute;
+    text-align: left;
+    list-style-type: none;
+    bottom: 0px;
+    margin-bottom: 0px;
+    float: right;
+    height: auto;
+    right: 25px;
+    list-style-image: none;
+	z-index:55;
+}
+.head .nav LI{
+   float: left;
+    height: 43px;	
+	position:relative;
+	left:0;
+	top:0;
+	z-index:1000;
+}
+.head .nav LI A{
+   padding-bottom: 0px;
+    line-height: 43px;
+    font-style: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    font-family: "微软雅黑";
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 0px;
+	font-weight:bold;
+}
+.head .nav LI A:link{
+   color: #000;
+    text-decoration: none;
+}
+.head .nav LI A:visited{
+   color: #000;
+    text-decoration: none;
+}
+.head .nav LI A:hover{
+   color: #fff;
+    text-decoration: none;
+}
+.head .nav LI A:hover{
+   background: url(nav_hover.jpg) no-repeat 0px 0px;
+    color: #fff;
+    text-decoration: none;
+}
+.head .nav LI A:hover span.submenu{ display:block;}
+.head .favorite{
+   position: absolute;
+    line-height: 23px;
+    width: 240px;
+    color: #fff;
+    top: 13px;
+    right: 26px;
+}
+.head .favorite A:link{
+   line-height: 23px;
+    color: #fff;
+    text-decoration: none;
+}
+.head .favorite A:visited{
+   color: #fff;
+    text-decoration: none;
+}
+.head .favorite A:hover{
+   background: url(ff_hover.jpg) no-repeat 0px 0px;
+    color: #000;
+    text-decoration: none;
+}
+.head .favorite A:active{
+   color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.loot{
+   min-height: 97px;
+    background: url(loot_bg.jpg) no-repeat 0px 0px;
+    height: auto;
+}
+.foot{
+   text-align: left;
+    margin: 0px auto;
+    width: 975px;
+    border-top: #d2d2d2 1px solid;
+    padding-top: 15px;
+}
+.col1{
+   text-align: left;
+}
+.col1{
+   width: 250px;
+}
+.col1 .loginborder{
+   padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #e8e8e8;
+    padding-top: 5px;
+}
+.col1 .login{
+   background: #fff;
+    _height: 141px;
+}
+.col1 .searchborder P{
+   text-align: left;
+}
+.col1 .searchborder{
+   position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col1 .kstdborder{
+   margin-bottom: 20px;
+}
+.col2{
+   text-align: left;
+    width: 512px;
+}
+.col3{
+   text-align: left;
+}
+.col3_box1 P{
+   margin: 10px;
+}
+.col3_box2 .padding10{
+   margin: 10px;
+    letter-spacing: 1px;
+}
+.col3_box3 P{
+   text-align: center;
+    margin-top: 10px;
+}
+.foot{
+   color: #7e7e7e;
+}
+.foot A:link{
+   color: #7e7e7e;
+    text-decoration: none;
+}
+.foot A:visited{
+   color: #7e7e7e;
+    text-decoration: none;
+}
+.foot A:hover{
+   background-color: #078eda;
+    color: #fff;
+    text-decoration: none;
+}
+.tab{
+   width: 100%;
+    background: url(tabline.jpg) repeat-x 0px 0px;
+    height: 24px;
+}
+.tab LI{
+   text-align: center;
+    line-height: 24px;
+    list-style-type: none;
+    width: 96px;
+    background: url(tab_bg.jpg) no-repeat 0px 0px;
+    float: left;
+    height: 24px;
+    color: #003c6d;
+    list-style-image: none;
+    margin-right: 1px;
+}
+LI.hover{
+   background: url(tab_hover.jpg) no-repeat 0px 0px;
+    color: #fff;
+}
+.lists{
+   clear: both;
+}
+.contact{
+   margin-top: 4px;
+    background: url(contact_right.jpg) no-repeat 0px 0px;
+    height: 627px;
+}
+.contact .brake{
+   text-align: right;
+    padding-right: 20px;
+}
+.google_map{
+   margin-top: 100px;
+    width: 405px;
+    float: right;
+    margin-right: 14px;
+    _margin-right: 7px;
+}
+.contact .lxwm{
+   margin-top: 120px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 14px;
+    _margin-left: 7px;
+}
+#box_right_sub2{
+   margin-top: 0px;
+}
+.neiyeleft{
+   text-align: left;
+    padding-left: 20px;
+}
+.neiyeleft H3{
+   margin-top: 20px;
+    margin-bottom: 25px;
+    color: #1a5380;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav li .submenu {
+	position:absolute;
+	top:30px;
+	left:10px;
+	display:none;
+	z-index:1000;
+	width:500px;
+}
+.head .nav li span.submenu a{ font-size:12px; font-family:"微软雅黑"; display:inline;}
+.list1,.list2{ display:none;}
+.tabnow{ display:block;}

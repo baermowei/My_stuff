@@ -1,0 +1,17 @@
+@charset "gb2312";
+/* CSS Document */
+*{margin:0 auto; padding:0;}
+ ul,li{list-style:none;padding:0;margin:0;}
+ img{border:none;}
+.csc_top{background:url(../images/shopping_tab.jpg) 0 0 no-repeat;width:958px;height:45px;margin:0 auto;position:relative;z-index:101;}
+.slideMenu{height:38px;}
+li.current a{color:#00b5f7;cursor:pointer;}
+li.current a:hover{color:#00b5f7;cursor:pointer;}
+.lavaLampWithImage3 li a:hover,.lavaLampWithImage3 li a:active{border:none;color:#00B5F7;text-decoration:none;}
+.lavaLampWithImage3 .sep{padding-top:13px;font-size:10px;color:#aeadad;float:left;height:20px;border-top:none;}
+.lavaLampWithImage3{position:relative;height:28px;float:left;}
+.lavaLampWithImage3 .current{color:#008ace;}
+.lavaLampWithImage3 .current a{color:#008ace;}
+.lavaLampWithImage3 li{float:left;list-style:none;padding-bottom:11px;}
+.lavaLampWithImage3 li.back{background:url(../images/b_slider.gif) center bottom no-repeat;width:120px;height:28px;z-index:8;position:absolute;}
+.lavaLampWithImage3 li a{font:bold 14px arial;text-decoration:none;color:#303030;outline:none;text-align:center;top:6px;letter-spacing:0;z-index:10;display:block;float:left;height:28px;position:relative;overflow:hidden;padding:5px 20px 0 17px;font-family:"Microsoft Yahei",Arial,Helvetica,sans-serif,"Î¢ÈíÑÅºÚ";font-weight:normal;font-size:13px;}

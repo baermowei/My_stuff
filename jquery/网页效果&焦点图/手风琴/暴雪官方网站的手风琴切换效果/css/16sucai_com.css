@@ -1,0 +1,156 @@
+/*  
+Theme Name: Airos Chou
+Theme URI: http://www.sunflowamedia.com/
+Description: Web Design examples
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #002433;
+	font-size: 12px;
+	color: #fff;
+}
+img { border: 0;}
+h2.title_name {
+	font-family: normal Georgia,'Times New Roman',Times,serif;
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0;
+	padding: 50px 0 20px 0;
+	text-align: center;
+}
+h2.title_name span {
+	font-family: normal Georgia,'Times New Roman',Times,serif;
+	color: #f9f66d;
+	font-size: 0.9em;
+}
+h2.title_name small {
+	color: #AAAAAA;
+	display: block;
+	font-family: normal Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.2em;
+	letter-spacing: 1.0em;
+	text-transform: uppercase;
+}
+p.copy_right {
+	width: 750px;
+	margin: 30px auto 0 auto;
+	clear: both;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-align: center;
+	overflow: hidden;
+}
+p.copy_right a {
+	color: #01B2F1;
+}
+p.copy_right a:hover {
+	text-decoration: none;
+}
+/* Content Begin */
+#col {
+	width: 750px;
+	margin: 50px auto 0 auto;
+	clear: both;
+	padding-bottom: 50px;
+}
+/* Homepage Style */
+.sliderbox { 
+	width: 700px; 
+	height: 375px; 
+	margin: 0 auto; 
+	overflow:hidden;
+}
+.sliderbox a { color:#01B2F1;}
+.sliderbox a:hover { 
+	color: #FFF; 
+	text-decoration: none;
+}
+.sliderbox dt {
+	height:32px; 
+	cursor:pointer; 
+	background: #333 url(../images/newsclosedbg.gif) no-repeat; 
+}
+.sliderbox .open { 
+	font-size: 13px; 
+	background: url(../images/newsopenbgtop.gif) no-repeat; 
+	color: #01b2f1; 
+	cursor: default;
+}
+.sliderbox .title {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 13px; 
+	color: #01b2f1; 
+	padding: 0 0 0 40px; 
+	line-height: 30px;
+}	
+.sliderbox .date {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 10px; 
+	color: #366a80; 
+	float: right; 
+	display: block; 
+	padding: 10px 15px 0 0;
+}		
+.sliderbox dt:hover span { color:#FFFFFF;}	
+.sliderbox .open:hover span { color:#01b2f1;}	
+.sliderbox .open:hover .date { color:#366A80;}	
+.sliderbox .n_thumb { 
+	width: 113px; 
+	height: 125px;
+	float:right; 
+	padding:0 0 20px 20px; 
+}
+.sliderbox dd {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #add9e8; 
+	height: 160px; 
+	padding: 0; 
+	margin: 0; 
+	background: url(../images/newsopenbgmid.jpg) no-repeat; 
+	position:relative;
+	overflow:hidden; 
+}
+.sliderbox .text { 
+	padding: 0 40px 35px 40px; 
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size: 11px; 
+	color: #99cee0; 
+}
+.sliderbox .text .readmoreline { 
+	text-transform:uppercase; 
+	padding: 12px 0 0 0; 
+	display: block;
+}
+.sliderbox .text .readmoreline .arrow {
+	width: 14px; 
+	height: 14px; 
+	background: url(../images/readmore.gif) top left no-repeat; 
+	display: block; 
+	float: left; 
+	margin: 1px 8px 0 0; 
+	font-size: 0px; 
+	line-height: 0px;
+}	
+.sliderbox .text .readmoreline:hover .arrow { background-position: bottom left;}	
+.sliderbox .text .readmoreline:hover { text-decoration: none;}	
+.sliderbox .thumb { 
+	cursor:pointer; 
+	margin:5px 15px 10px 20px;
+}
+.newsarchive .thumb, .sliderbox .thumb {
+	width: 113px;
+	height: 125px;
+	background-repeat: no-repeat;
+	display: block;
+	float: right;
+}
+.sliderbox .text .readmoreline {
+	display: block;
+	padding: 12px 0 0;
+	text-transform: uppercase;
+}
+/*Ò»Á÷ËØ²ÄÍøwww.16sucai.com*/

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一流素材网 - 作品展示效果</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript" src="js/16sucai.js"></script>
+<body>
+<div id="slide_play">
+	<ol>
+		<li></li>
+		<li></li>
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+	</ol>
+</div>
+<p style="font-size:12px; text-align:center">一流素材网收藏整理：www.16sucai.com 代码来源妙味课堂www.miaov.com</p>
+<script type="text/javascript">
+(function ()
+{
+	var arrImagePaths=[];
+	var oSlidePlay=document.getElementById('slide_play');
+	var oImgViewer=null;
+	var aLiBtn=oSlidePlay.getElementsByTagName('ol')[0].getElementsByTagName('li');
+	var miaovWorkNowIndex=0;
+	var iDirect=1;
+	
+	var oAutoPlayTimer=null;
+	
+	for(i=0;i<aLiBtn.length;i++)
+	{
+		arrImagePaths[i]={};
+		
+		aLiBtn[i].index=i;
+		aLiBtn[i].onmouseover=function ()
+		{
+			gotoImg(this.index);
+		};
+	}
+	
+	//注意：
+	//************** 用于修改文字和图片的位置 **************
+	
+	//用于修改图片地址
+	arrImagePaths[0].src="images/1.jpg";
+	arrImagePaths[1].src="images/2.jpg";
+	arrImagePaths[2].src="images/3.jpg";
+	arrImagePaths[3].src="images/4.jpg";
+	arrImagePaths[4].src="images/5.jpg";
+	
+	//用于修改图片下方的文字
+	arrImagePaths[0].info='一流素材网-场馆介绍1-www.16sucai.com';
+	arrImagePaths[1].info='一流素材网-场馆介绍2-www.16sucai.com';
+	arrImagePaths[2].info='一流素材网-场馆介绍3-www.16sucai.com';
+	arrImagePaths[3].info='一流素材网-场馆介绍4-www.16sucai.com';
+	arrImagePaths[4].info='一流素材网-场馆介绍5-www.16sucai.com';
+	
+	//用于修改文字的链接地址
+	arrImagePaths[0].href='http://www.16sucai.com';
+	arrImagePaths[1].href='http://www.16sucai.com';
+	arrImagePaths[2].href='http://www.16sucai.com';
+	arrImagePaths[3].href='http://www.16sucai.com';
+	arrImagePaths[4].href='http://www.16sucai.com';
+	
+	//修改链接跳转地址的target(_blank、_self等)
+	arrImagePaths.link_target='_self';
+	//**************** 结束用于修改的位置 *****************
+	
+	function startAutoPlay()
+	{
+		oAutoPlayTimer=setInterval
+		(
+			function ()
+			{
+				miaovWorkNowIndex+=iDirect;
+				
+				if(0==miaovWorkNowIndex)
+				{
+					iDirect=1;
+				}
+				
+				if(miaovWorkNowIndex==aLiBtn.length-1)
+				{
+					iDirect=-1;
+				}
+				
+				gotoImg(miaovWorkNowIndex);
+			}, 4000
+		);
+	}
+	
+	startAutoPlay();
+	
+	function gotoImg(index)
+	{
+		for(i=0;i<aLiBtn.length;i++)
+		{
+			aLiBtn[i].className='';
+		}
+		aLiBtn[index].className='active';
+		oImgViewer.gotoImg(index);
+		
+		miaovWorkNowIndex=index;
+	}
+	
+	oImgViewer=new ImgViewer
+	(
+		arrImagePaths, oSlidePlay, 
+		function (index)
+		{
+			clearInterval(oAutoPlayTimer);
+			startAutoPlay();
+			
+			for(i=0;i<aLiBtn.length;i++)
+			{
+				aLiBtn[i].className='';
+			}
+			aLiBtn[index].className='active';
+			miaovWorkNowIndex=index;
+		}
+	);
+	gotoImg(Math.floor(arrImagePaths.length/2));
+})();
+</script>
+</body>
+</html>

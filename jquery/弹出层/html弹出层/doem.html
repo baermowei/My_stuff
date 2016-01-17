@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style type="text/css">
+body{padding:0; margin:0; font-size:84%; color:#333333; font-family:'宋体',Verdana, Geneva, sans-serif; height:2000px; width:100%;}
+ul,li,form,h1,h2,h3,h4,h5,h6,p{padding:0; margin:0; list-style-type:none;}
+i,cite{font-style:normal;}
+a{color:#34538b; text-decoration:underline;}
+a:hover{color:#F30; text-decoration:underline;}
+.l{float:left;}.r{float:right;}.cl{clear:both;}
+img{border:0;}
+
+#tinybox{position:absolute; display:none; padding:10px;  background:#ffffff url(../image/preload.gif) no-repeat 50% 50%; border:10px solid #e3e3e3; z-index:2000;}
+#tinymask{position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000000; z-index:1500;}
+#tinycontent{background:#ffffff; }
+#close{ width:20px; height:20px; position:absolute; z-index:99999; top:2px; right:2px; background:url(Close.png) no-repeat;}
+#close1{ width:250px; height:80px; position:absolute; bottom:100px; right:75px;}
+
+.fc{width:692px;height:400px; background:url(entry.png) no-repeat;}
+.fc dt{width:692px;height:200px;}
+.fc dd{width:692px;}
+.fc dd a{ padding-right:20px; cursor:pointer; }
+</style>
+</head>
+<script type="text/javascript" src="tinybox.js"></script>
+<body>
+<b>图片</b><a class="ml20" href="#zhangxinxu" id="click_test1">效果预览</a>
+<b>加载一个动态页面</b><a class="ml20" href="#zhangxinxu" id="click_test2">效果预览</a>
+<b>显示flash</b><a class="ml20" href="#zhangxinxu" id="click_test3">效果预览</a>
+<b>自动隐藏</b><a class="ml20" href="#zhangxinxu" id="click_test4">效果预览</a>
+
+
+<script type="text/javascript">
+	
+        var content1 = "<dl class=\"fc\"><dt><\/dt><dd><a href=\"###\"><img src=\"note_h.png\" \/><\/a><a><img src=\"note_n.png\" \/><\/a><\/dd><\/dl>";
+        T$('click_test1').onclick = function(){TINY.box.show(content1,0,0,0,1)}
+		
+        var content2 = "<IFRAME height=365 src=\"http:\/\/pc.115.com\/static\/mini\/min_files\/tt_415x310.html\" frameBorder=0 width=427 scrolling=no><\/IFRAME>";
+        T$('click_test2').onclick = function(){TINY.box.show(content2,0,0,0,1)}
+		
+        var content3 = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' width='550' height='400'><param name='movie' value='as3_clock_2.swf' /><param name='quality' value='high' /><param name='wmode' value='opaque' /><embed height='400' width='550'  src='as3_clock_2.swf' type='application/x-shockwave-flash'></embed></object>";
+        T$('click_test3').onclick = function(){TINY.box.show(content3,0,0,0,1)}
+		
+        var content4 = "该浮动层将在3秒钟内消失。";
+        T$('click_test4').onclick = function(){TINY.box.show(content4,0,0,0,0,3)}
+        
+        
+
+</script>
+
+<script>
+function hiddle()
+{
+	document.getElementById('tinybox').style.display='none';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+#fancymenu {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND: url(images/bg.gif) no-repeat 50% top; PADDING-BOTTOM: 15px; MARGIN: 10px 0px; OVERFLOW: hidden; WIDTH: 421px; PADDING-TOP: 15px; POSITION: relative; HEIGHT: 29px
+}
+#pictureselect {
+	POSITION: relative; HEIGHT: 1%
+}
+#fancymenu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#pictureselect {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#fancymenu UL LI {
+	FLOAT: left; LIST-STYLE-TYPE: none
+}
+#pictureselect LI {
+	FLOAT: left; LIST-STYLE-TYPE: none
+}
+#fancymenu UL LI A {
+	DISPLAY: block; Z-INDEX: 10; FLOAT: left; OVERFLOW: hidden; TEXT-INDENT: -500em; POSITION: relative; HEIGHT: 30px
+}
+#pictureselect LI A {
+	DISPLAY: block; Z-INDEX: 10; FLOAT: left; OVERFLOW: hidden; TEXT-INDENT: -500em; POSITION: relative; HEIGHT: 30px
+}
+#pictureselect LI {
+	HEIGHT: 54px
+}
+#pictureselect LI A {
+	WIDTH: 62px; HEIGHT: 54px
+}
+#menu_home A {
+	BACKGROUND: url(images/menu_home.png) no-repeat center 50%; WIDTH: 59px
+}
+#menu_plantatree A {
+	BACKGROUND: url(images/menu_plantatree.png) no-repeat center 50%; WIDTH: 119px
+}
+#menu_travel A {
+	BACKGROUND: url(images/menu_travel.png) no-repeat center 50%; WIDTH: 70px
+}
+#menu_rideanelephant A {
+	BACKGROUND: url(images/menu_rideanelephant.png) no-repeat center 50%; WIDTH: 142px
+}
+#nopicture A {
+	BACKGROUND: url(images/no_picture.gif) no-repeat center 50%
+}
+#picture_1 A {
+	BACKGROUND: url(images/picture_1.jpg) no-repeat center 50%
+}
+#picture_2 A {
+	BACKGROUND: url(images/picture_2.jpg) no-repeat center 50%
+}
+#picture_3 A {
+	BACKGROUND: url(images/picture_3.jpg) no-repeat center 50%
+}
+#picture_4 A {
+	BACKGROUND: url(images/picture_4.jpg) no-repeat center 50%
+}
+#fancymenu LI.background {
+	Z-INDEX: 8; BACKGROUND: url(images/bg_menu_right.gif) no-repeat right top; VISIBILITY: hidden; POSITION: absolute
+}
+#fancymenu .background .left {
+	BACKGROUND: url(images/bg_menu.gif) no-repeat left top; MARGIN-RIGHT: 9px; HEIGHT: 30px
+}
+#pictureselect LI.background {
+	Z-INDEX: 8; BACKGROUND: url(images/bg_images.gif) no-repeat 50% top; VISIBILITY: hidden; WIDTH: 53px; POSITION: absolute
+}
+#pictureselect LI.background .left {
+	DISPLAY: none
+}
+#userprofile {
+	PADDING-RIGHT: 15px; MARGIN-TOP: 15px; PADDING-LEFT: 15px; BACKGROUND: url(images/bg_form.gif) no-repeat left top; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 360px; PADDING-TOP: 0px; HEIGHT: 180px
+}
+#userprofile H4 {
+	MARGIN-BOTTOM: 10px; FONT: bold 11px Verdana
+}
+#userprofile P.input {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; BACKGROUND: #ebebeb; PADDING-BOTTOM: 0px! important; OVERFLOW: hidden; PADDING-TOP: 0px! important
+}
+#userprofile P.input INPUT {
+	BORDER-RIGHT: #d4d4d4 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d4d4d4 1px solid; DISPLAY: block; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; MARGIN: 3px; BORDER-LEFT: #d4d4d4 1px solid; WIDTH: 348px; PADDING-TOP: 3px; BORDER-BOTTOM: #d4d4d4 1px solid
+}
+#userprofile P.input INPUT:focus {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; BORDER-BOTTOM: #999 1px solid
+}

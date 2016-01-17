@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jquerytab选项卡</title>
+<link href="master.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+google.load("jquery", "1.3.1"); 
+</script>
+<script type="text/javascript">
+$(function(){
+	$("#tab1 li").each(
+		function(i){
+			$(this).click(function(){
+				if(!$(this).hasClass("hover")){
+					$("#tab1 li").removeClass("hover");
+					$(this).addClass("hover")
+					$(".list1").removeClass("tabnow");
+					$(".list1").eq(i).addClass("tabnow");
+				}
+			});
+			})
+	$("#tab2 li").each(
+		function(j){
+			$(this).click(function(){
+				if(!$(this).hasClass("hover")){
+					$("#tab2 li").removeClass("hover");
+					$(this).addClass("hover")
+					$(".list2").removeClass("tabnow");
+					$(".list2").eq(j).addClass("tabnow");
+				}
+			});
+		}
+	);
+})
+</script>
+<div class="news" style="margin:50px auto; width:300px;">
+  <ul class="tab" id="tab1">
+    <li class="hover">公司新闻
+    <li>行业新闻
+    <li>小常识
+  </ul>
+  <div class="lists">
+    <div style="padding:10px 0;" class="list1 tabnow">
+    	此处显示
+      class &quot;list1&quot; 的内容
+    </div>
+    <div class="list1">此处显示
+      class &quot;list2&quot; 的内容</div>
+    <div class="list1">此处显示
+      class &quot;list3&quot; 的内容</div>
+  </div>
+</div>
+<div class="products" style="margin:0 auto; width:300px;">
+  <ul class="tab" id="tab2">
+    <li class="hover">机械
+    <li>锻造
+    <li>金属
+  </ul>
+  <div>
+    <div class="list2 tabnow">
+      <div class="columnSpace"
+                                    id="elem-FrontProducts_list01-1277815698970" name="商品列表"> 
+        <!--#include virtual=  "/comp-FrontProducts_list01-1277815698970"--></div>
+    </div>
+    <div class="list2"
+                                    style="display:none">此处显示
+      class &quot;list2&quot; 的内容</div>
+    <div class="list2"
+                                    style="display:none">此处显示
+      class &quot;list3&quot; 的内容</div>
+  </div>
+</div>
+</body>
+</html>

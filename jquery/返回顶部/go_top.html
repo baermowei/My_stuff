@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>回到顶部</title>
+<style type="text/css">
+body{ font-size:12px; margin:0; padding:0; background-image:url(about:blank);background-attachment:fixed;}
+html{_background:url(about:blank) fixed;}
+.wrap{ width:958px; height:3000px; border:1px solid #393; margin:0 auto; overflow:hidden; padding-top:20px;}
+.go_top{ width:20px; height:78px; background-color:#06C; border:1px solid #06C; border-radius:2px; color:#FFF; text-align:center; writing-mode:tb-rl; position:fixed; display:none; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {b.ar_r{ border-width:5px 5px 5px 0;}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+</head>
+<body>
+	<div class="wrap"><strong style="font-size:24px;">请向下拉动滚动条</strong>
+	</div>
+	<div id="go_top" class="go_top">回到顶部</div>
+<script type="text/javascript">
+	var av_height = $(window).height();
+	var av_width = $(window).width();
+	var go_top= $("#go_top");
+	var Gotop_w = go_top.width()+2;
+	var Gotop_h = go_top.height()+2;
+	var doc_width = 960;
+	var Gotop_x = (av_width>doc_width?0.5*av_width+0.5*doc_width:av_width-Gotop_w);
+	var Gotop_y = av_height-Gotop_h;
+	var ie6Hack = "<style>.go_top{position:absolute; top:expression(documentElement.scrollTop+documentElement.clientHeight - this.offsetHeight-40);</style>}";
+	if ($.browser.msie && ($.browser.version == "6.0")){
+			$("body").append(ie6Hack);
+			}
+	function setGotop(){
+		av_height = $(window).height();
+		av_width = $(window).width();
+		Gotop_y = av_height-Gotop_h-40;
+		Gotop_x = (av_width>doc_width?0.5*av_width+0.5*doc_width:av_width-Gotop_w);
+		if($(window).scrollTop()>0){
+		go_top.fadeIn(200);
+		}else{
+			go_top.fadeOut(200);
+			}
+		if ($.browser.msie && ($.browser.version == "6.0")){
+			go_top.animate({"left":Gotop_x},0);
+			return false;
+			}
+		go_top.animate({"left":Gotop_x,"top":Gotop_y},0);
+	}
+	setGotop();
+	$(window).resize(function(){
+		setGotop();	
+		})
+	$(window).scroll(function(){
+		setGotop();	
+		})
+	go_top.click(function(){
+		$("html , body").animate({scrollTop:"0"},100);
+		})
+</script>
+</body>
+</html>

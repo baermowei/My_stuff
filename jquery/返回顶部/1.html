@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>回到顶部效果[缓冲运动]-web前端菜鸟团</title>
+<style type="text/css">
+	body{ height:2000px;}
+	#div1{ cursor:pointer; position:absolute; bottom:0; right:10px; height:40px; display:none;}
+</style>
+
+<script type="text/javascript">
+window.onload=function()
+{
+	var oScrollTop=0;
+	var oBtn=document.getElementById('div1');
+	window.onresize=window.onscroll=function()
+	{
+		var oClientHeight=document.documentElement.clientHeight;
+		oScrollTop=document.documentElement.scrollTop||document.body.scrollTop;//滚动条高度
+		//oBtn.style.top=oClientHeight-oBtn.offsetHeight+oScrollTop+"px";
+		oBtn.style.display="block";
+		Imu=oClientHeight-oBtn.offsetHeight+oScrollTop;
+		stratMove(oBtn,Imu);
+	}
+	//点击返回顶部
+	oBtn.onclick=function()
+	{
+		stratMove(document,0);
+	}
+	
+	var timer=null;
+	var oBjTop=0;
+	var Imu=0;
+	
+	//运动框架
+	function stratMove(obj,iTarge)
+	{
+		clearInterval(obj.timer);
+		obj.timer=setInterval(function(){
+			doMove(obj,parseInt(iTarge));
+		},30);
+	}
+	
+	function doMove(obj,iTarge)
+	{
+		var oDiv1=document.getElementById('div1');
+		var iSpeed=0;
+		if(obj!=document)
+		{
+		    iSpeed=(iTarge-obj.offsetTop)/12;
+			iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+		}
+		else
+		{
+			 var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+			 iSpeed=(iTarge-oScrollTop)/12;
+			 iSpeed=iSpeed>0?Math.ceil(iSpeed):Math.floor(iSpeed);
+		}
+		if(obj!=document)
+		{
+			if(obj.offsetTop==iTarge)
+			{
+				clearInterval(obj.timer);
+			}
+			else
+			{	
+				obj.style.top=obj.offsetTop+iSpeed+"px";
+			}
+		}
+		else
+		{
+		
+			if(oScrollTop==0)
+			{
+				clearInterval(obj.timer);
+			}
+			else
+			{
+				document.documentElement.scrollTop=document.body.scrollTop=scrollTop+iSpeed;
+				//document.title=document.documentElement.scrollTop=document.body.scrollTop;
+			}
+		}
+		
+	}
+}
+	function getStyle(obj,attr)
+	{
+		return obj.currentStyle?obj.currentStyle[attr]:getComputedStyle(obj,false)[attr];
+	}
+</script>
+</head>
+
+<body>
+	<div id="div1"><img src="ToTop.png" /></div>
+	<a href="http://www.owebbird.com" title="Web前端-菜鸟团">Web前端-菜鸟团</a>
+</body>
+</html>

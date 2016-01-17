@@ -1,0 +1,27 @@
+* { margin:0; padding:0; border:0; list-style:none; }
+body { background:#fff; padding:20px; font:1em Verdana, Geneva, sans-serif; background:#eee; }
+.main { width:668px; margin:0 auto; background:#fff; padding:10px; }
+.main h1 { font-size:16px; text-align:center; }
+.main h2 { font:normal 12px/26px Georgia, Verdana; color:#999; text-align:center; height:26px; margin:6px 0; background:#eee; }
+.box h4 { color:#c00; line-height:30px; font-size:12px; }
+.tip { border:1px solid #dedede; margin-top:20px; }
+.tip p { height:30px; line-height:30px; padding-left:16px; font-size:12px; font-weight:bold; border-bottom:1px solid #dedede; background:#f1f1f1; }
+.tip pre { padding:10px; font:12px Verdana, Geneva, sans-serif; }
+.tip2 { font-size:12px; color:red; margin-top:16px; }
+/*=========mF_tab--========*/
+.mF_tab { width:426px; height:90px; margin-left:16px; }
+.mF_tab .btn { position:absolute; top:0; left:0; z-index:2; }
+.mF_tab .btn li { float:left; width:80px; height:26px; line-height:26px; text-align:center; margin-right:2px; border:1px solid #dedede; border-bottom:0; cursor:pointer; background:#f1f1f1; }
+.mF_tab .btn li.current { height:27px; background:#fff; }
+.mF_tab .cont { position:absolute; top:27px; left:0; border:1px solid #dedede; overflow:hidden; }
+.mF_tab .cont .swt { position:absolute; left:0; top:0; }
+.mF_tab .cont .swt li p { padding:16px; }
+.qqTab { margin-bottom:12px; }
+.qqTab .btn li { background:#A1DEFE; border-color:#36BAF0; }
+.qqTab .btn li.current { height:27px; background:#F9FEFF; }
+.qqTab .cont { border-color:#36BAF0; }
+.qqTab .list { float:left; overflow:hidden; text-align:center; margin:16px; margin-right:0; display:inline; }
+.qqTab .list ul li { list-style:circle; }
+.qqTab .left { width:150px; background:#1EB2EF; }
+.qqTab .middle { width:236px; background:#D4F2FD; }
+.qqTab .right { width:150px; background:#CE4982; }
